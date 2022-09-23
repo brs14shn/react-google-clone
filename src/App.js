@@ -1,14 +1,19 @@
 
 import './App.css';
 import Home from './components/Home.js';
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      
-        <Home/>
+    
+      <AppRouter>
+
+       <Home/>
+
+      </AppRouter>
        
-    </div>
+       
+    
   );
 }
 
