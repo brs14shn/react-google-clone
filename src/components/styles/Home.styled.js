@@ -28,8 +28,6 @@ p{
 .icons{
     margin-left:20px
 }
-
-
 `
 
 export const BodyContainer=styled.div`
