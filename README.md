@@ -1,5 +1,5 @@
 
-# React install
+# React installation
 İlk olarak create-react-app kullanarak terminalden  yeni bir proje oluşturacağız.
 ```
 
@@ -21,3 +21,10 @@ yarn add styled-components
 ```
 
 # Home.js
+
+
+# React_Router 
+```
+npm install react-router-dom@6
+```
+[React Router dokümanı için tıklayınız 👈](https://reactrouter.com/en/v6.3.0/getting-started/overview)
