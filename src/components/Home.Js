@@ -26,7 +26,7 @@ const Home = () => {
             <Header>
                 <p>Gmail</p>
                 <p>Images</p>
-                <AppsIcon className="icons" />
+                <AppsIcon className="icons" title="Google Apps" />
                 <AccountCircleIcon className="icons"/>
             </Header>
         </HeaderContainer>
