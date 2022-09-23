@@ -31,3 +31,17 @@ p{
 
 
 `
+
+export const BodyContainer=styled.div`
+display: flex; 
+flex-direction: column;
+margin-top:10%;
+flex:1;
+
+img{
+    object-fit: contain;
+    height: 100px;
+    
+}
+
+`

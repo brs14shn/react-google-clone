@@ -9,7 +9,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import googlelogo from "../assets/googlelogo.png"
 
 //*stlyed
-import HomeContainer,{HeaderContainer,Header} from "./styles/Home.styled"
+import HomeContainer,{HeaderContainer,Header,BodyContainer} from "./styles/Home.styled"
+import Search from './Search';
 
 //?👆 Dahili bir resim eklemek için import gereklidir
 
@@ -29,9 +30,12 @@ const Home = () => {
                 <AccountCircleIcon className="icons"/>
             </Header>
         </HeaderContainer>
-        <div className="body">
+        <BodyContainer>
             <img src={googlelogo} alt="google_logo" />
-        </div>
+            <div>
+                <Search/>
+            </div>
+        </BodyContainer>
     </HomeContainer>
   )
 }
