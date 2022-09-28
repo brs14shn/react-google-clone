@@ -7,10 +7,12 @@ import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import Button from '@mui/material/Button';
 
 import SearchInput,{SearchButton} from "./styles/Search.styled"
-const Search = () => {
 
-  const [input,setInput]=React.useState("")
-  console.log(input);
+const Search = ({hide}) => {
+
+//! JS
+const [input,setInput]=React.useState("")
+console.log(input);
 
 
   return (
@@ -24,10 +26,13 @@ const Search = () => {
         />
         <KeyboardVoiceIcon/>
       </SearchInput>
-      <SearchButton spacing={2} direction="row">
-      <Button type="submit" variant="outlined">Google Search</Button>
-      <Button variant="outlined">I am feeling lucky</Button>
-    </SearchButton>
+      {!hide && (
+         <SearchButton spacing={2} direction="row">
+         <Button type="submit" variant="outlined">Google Search</Button>
+         <Button variant="outlined">I am feeling lucky</Button>
+       </SearchButton>
+      )}
+     
 
     </form>
   )
